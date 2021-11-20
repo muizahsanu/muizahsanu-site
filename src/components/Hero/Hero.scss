@@ -1,0 +1,88 @@
+@use '../../scss/utils/' as *;
+
+.hero{
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  border-bottom: rem(2) solid $c-yellow;
+
+  @include breakpoint(medium){
+    grid-template-columns: 1fr 1fr;
+    background-image: url("../../images/hero-background.png");
+    min-height: rem(480);
+    padding: 0 rem(48);
+  }
+
+  &__image{
+    text-align: center;
+    @include breakpoint(medium){
+      display: none;
+    }
+    img{
+      max-height: rem(52);
+    }
+  }
+
+  &__text-left, &__text-right{
+    display: grid;
+    align-items: center;
+    padding: rem(16);
+    & > *{
+      flex: 1;
+    }
+    @include breakpoint(medium){
+      display: inline-block;
+    }
+  }
+
+  &__text-left{
+    grid-template-columns: auto 1fr;
+    font-family: $font-pacifico;
+    font-size: rem(18);
+    text-align: center;
+
+    @include breakpoint(medium){
+      font-size: rem(42);
+      text-align: left;
+    }
+
+    span{
+      display: block;
+    }
+    span:last-child{
+      margin-left: 25%;
+      color: $c-yellow;
+      @include breakpoint(medium){
+        margin-left: 10%;
+      }
+    }
+  }
+
+  &__text-right{
+    gap: rem(8);
+    grid-template-columns: 1fr auto;
+    font-family: $font-arch-daughter;
+    font-size: rem(14);
+    letter-spacing: rem(.25);
+    background-color: $c-yellow;
+    color: $c-purple;
+
+    @include breakpoint(medium){
+      background-color: transparent;
+      font-size: rem(24);
+
+      .text{
+        max-width: rem(360);
+        margin-left: auto;
+      }
+    }
+
+    span{
+      display: block;
+    }
+  }
+}
