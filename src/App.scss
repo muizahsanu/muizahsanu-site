@@ -1,3 +1,5 @@
+@use './scss/utils/' as *;
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -15,5 +17,79 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+  gap: rem(16);
+  margin-top: rem(16);
+  @include breakpoint(medium){
+    margin-top: rem(24);
+    gap: rem(24);
+  }
+  .content-title{
+    background: $c-grad-radial;
+    text-align: center;
+    color: $c-purple;
+    font-weight: 700;
+    font-size: rem(18);
+    
+    @include breakpoint(medium){
+      margin-top: rem(24);
+      font-size: rem(24);
+    }
+  }
+
+  .portfolio{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0 rem(16);
+    gap: rem(16);
+
+    @include breakpoint(medium){
+      padding: 0 rem(64);
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    &__item{
+      box-shadow: rgba($color: $c-yellow, $alpha: .3) 0px 1px 2px 0px, rgba($color: $c-yellow, $alpha: .15) 0px 1px 3px 1px;
+      // box-shadow: rgba($color: $c-yellow, $alpha: .25) 0px 2px 5px -1px, rgba($color: $c-yellow, $alpha: .3) 0px 1px 3px -1px;
+      border-radius: rem(10);
+      overflow: hidden;
+      transition: all 500ms;
+      &:hover{
+        box-shadow: rgba($color: $c-yellow, $alpha: .1) 0px 20px 25px -5px, rgba($color: $c-yellow, $alpha: .04) 0px 10px 10px -5px;
+        transform: translateY(-5px);
+        .thumb img{
+          filter: grayscale(0);
+        }
+      }
+      .thumb{
+        max-width: rem(400);
+        height: rem(200);
+
+        @include breakpoint(medium){
+          max-width: none;
+        }
+
+        img{
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: center;
+          filter: grayscale(100%);
+          transition: filter 500ms;
+        }
+      }
+      .title{
+        display: block;
+        padding: rem(8) 0;
+        text-align: center;
+        font-weight: 700;
+        color: $c-yellow;
+      }
+    }
   }
 }

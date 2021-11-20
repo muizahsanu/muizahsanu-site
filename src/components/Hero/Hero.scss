@@ -44,6 +44,7 @@
     font-family: $font-pacifico;
     font-size: rem(18);
     text-align: center;
+    // background: $c-purple;
 
     @include breakpoint(medium){
       font-size: rem(42);

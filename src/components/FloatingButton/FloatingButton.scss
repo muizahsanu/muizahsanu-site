@@ -1,0 +1,50 @@
+@use '../../scss/utils/' as *;
+
+.float-button{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: rem(16);
+
+  @include breakpoint(medium){
+    margin: rem(64);
+  }
+
+  &__content{
+    max-height: 0;
+    overflow: hidden;
+    transition: all 500ms;
+    &.show{
+      max-height: rem(100);
+
+      @include breakpoint(medium){
+        max-height: rem(124);
+      }
+    }
+  }
+
+  .icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: rem(42);
+    width: rem(42);
+    background-color: $c-yellow;
+    color: $c-purple;
+    border-radius: 100%;
+    font-size: rem(18);
+    margin-top: rem(8);
+    cursor: pointer;
+    border: 1px solid $c-purple;
+    &:hover{
+      background: $c-purple;
+      color: $c-yellow;
+      border: 2px solid $c-yellow;
+    }
+
+    @include breakpoint(medium){
+      height: rem(54);
+      width: rem(54);
+    }
+  }
+}
