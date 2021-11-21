@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/muizahsanu-site/static/css/main.fe7fc36f.chunk.css",
+    "main.js": "/muizahsanu-site/static/js/main.36a0329a.chunk.js",
+    "main.js.map": "/muizahsanu-site/static/js/main.36a0329a.chunk.js.map",
+    "runtime-main.js": "/muizahsanu-site/static/js/runtime-main.609e1c90.js",
+    "runtime-main.js.map": "/muizahsanu-site/static/js/runtime-main.609e1c90.js.map",
+    "static/js/2.7af8299b.chunk.js": "/muizahsanu-site/static/js/2.7af8299b.chunk.js",
+    "static/js/2.7af8299b.chunk.js.map": "/muizahsanu-site/static/js/2.7af8299b.chunk.js.map",
+    "static/js/3.ccde6401.chunk.js": "/muizahsanu-site/static/js/3.ccde6401.chunk.js",
+    "static/js/3.ccde6401.chunk.js.map": "/muizahsanu-site/static/js/3.ccde6401.chunk.js.map",
+    "index.html": "/muizahsanu-site/index.html",
+    "static/css/main.fe7fc36f.chunk.css.map": "/muizahsanu-site/static/css/main.fe7fc36f.chunk.css.map",
+    "static/js/2.7af8299b.chunk.js.LICENSE.txt": "/muizahsanu-site/static/js/2.7af8299b.chunk.js.LICENSE.txt",
+    "static/media/Hero.scss": "/muizahsanu-site/static/media/hero-background.2546cebb.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.609e1c90.js",
+    "static/js/2.7af8299b.chunk.js",
+    "static/css/main.fe7fc36f.chunk.css",
+    "static/js/main.36a0329a.chunk.js"
+  ]
+}
