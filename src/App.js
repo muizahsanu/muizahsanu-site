@@ -7,19 +7,19 @@ import Nav from './components/Nav/Nav';
 const portfolioData = [
   {
     "id": "1",
-    "image": "/images/content/tip-calculator-app.jpg",
+    "image": "./images/content/tip-calculator-app.jpg",
     "title": "Tip calculator app using React JS",
     "link": "https://muizahsanu-tip-calculator-app.netlify.app/"
   },
   {
     "id": "2",
-    "image": "/images/content/re-membah.jpg",
+    "image": "./images/content/re-membah.jpg",
     "title": "Re-membah (Memory Game)",
     "link": "https://re-membah.pages.dev/"
   },
   {
     "id": "3",
-    "image": "/images/content/e-commerce-product-page.jpg",
+    "image": "./images/content/e-commerce-product-page.jpg",
     "title": "E-commerce product page",
     "link": "https://muizahsanu-e-commerce-product-page.netlify.app/"
   }
