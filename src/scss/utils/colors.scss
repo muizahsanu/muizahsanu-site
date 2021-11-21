@@ -8,8 +8,9 @@ $c-black: hsl(0, 0%, 0%);
 $c-white: hsl(0, 0%, 100%);
 
 
-$c-grad: linear-gradient(90deg, rgba(251,215,93,0.54) 0%, rgba(112,26,122,1) 50%, rgba(251,215,93,0.54) 100%);
-$c-grad-reverse: linear-gradient(-90deg, rgba(251,215,93,1) 0%, rgba(112,26,122,0.5) 50%, rgba(255,255,255,1) 100%);
+$c-grad: linear-gradient(90deg, rgba(251,215,93,1) 25%,rgba(255,255,255,1) 100%);
+$c-grad-rad-yellow: radial-gradient(circle, rgba(251,215,93,1) 25%,rgba(255,255,255,1) 100%);
+$c-grad-reverse: linear-gradient(-90deg, rgba(251,215,93,1) 0%, rgba(255,255,255,1) 100%);
 $c-grad-mobile: linear-gradient(90deg, rgba(112,26,122,0.55) 0%, rgba(251,215,93,0.55) 100%);
 $c-grad-radial: radial-gradient(circle, rgba(251,215,93,1) 25%, rgba(112,26,122,1) 100%);
 $c-grad-radial-reverse:radial-gradient(circle, rgba(112,26,122,.0) 0%, rgba(251,215,93,0.8) 100%);

@@ -8,7 +8,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  border-bottom: rem(2) solid $c-yellow;
+  // border-bottom: rem(2) solid $c-yellow;
 
   @include breakpoint(medium){
     grid-template-columns: 1fr 1fr;
@@ -44,11 +44,12 @@
     font-family: $font-pacifico;
     font-size: rem(18);
     text-align: center;
-    // background: $c-purple;
+    background: $c-purple;
 
     @include breakpoint(medium){
       font-size: rem(42);
       text-align: left;
+      background: transparent;
     }
 
     span{

@@ -30,7 +30,7 @@
     gap: rem(24);
   }
   .content-title{
-    background: $c-grad-radial;
+    background: $c-grad-rad-yellow;
     text-align: center;
     color: $c-purple;
     font-weight: 700;
@@ -39,6 +39,7 @@
     @include breakpoint(medium){
       margin-top: rem(24);
       font-size: rem(24);
+      padding: 0 rem(64);
     }
   }
 
@@ -54,13 +55,12 @@
     }
 
     &__item{
-      box-shadow: rgba($color: $c-yellow, $alpha: .3) 0px 1px 2px 0px, rgba($color: $c-yellow, $alpha: .15) 0px 1px 3px 1px;
-      // box-shadow: rgba($color: $c-yellow, $alpha: .25) 0px 2px 5px -1px, rgba($color: $c-yellow, $alpha: .3) 0px 1px 3px -1px;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
       border-radius: rem(10);
       overflow: hidden;
       transition: all 500ms;
       &:hover{
-        box-shadow: rgba($color: $c-yellow, $alpha: .1) 0px 20px 25px -5px, rgba($color: $c-yellow, $alpha: .04) 0px 10px 10px -5px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
         transform: translateY(-5px);
         .thumb img{
           filter: grayscale(0);
@@ -79,7 +79,7 @@
           height: 100%;
           object-fit: cover;
           object-position: center;
-          filter: grayscale(100%);
+          // filter: grayscale(100%);
           transition: filter 500ms;
         }
       }
@@ -88,7 +88,7 @@
         padding: rem(8) 0;
         text-align: center;
         font-weight: 700;
-        color: $c-yellow;
+        color: $c-purple;
       }
     }
   }

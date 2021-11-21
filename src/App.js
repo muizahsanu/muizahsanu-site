@@ -30,7 +30,7 @@ function App() {
       <Nav />
       <Hero />
       <div className="content">
-        <div className="content-title">
+        <div className="content-title reverse">
           Apps I've Build
         </div>
         <div className="portfolio">

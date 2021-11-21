@@ -20,7 +20,7 @@ export default function FloatingButton(){
         </a>
       </div>
       <div className="indicator icon" onClick={handleClick}>
-        <i className='bx bxs-info-circle' ></i>
+        <i className='bx bx-info-circle' ></i>
       </div>
     </div>
   )

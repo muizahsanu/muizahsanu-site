@@ -36,15 +36,16 @@
     margin-top: rem(8);
     cursor: pointer;
     border: 1px solid $c-purple;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
     &:hover{
-      background: $c-purple;
-      color: $c-yellow;
-      border: 2px solid $c-yellow;
+      // background: $c-purple;
+      filter: brightness(.9);
     }
 
     @include breakpoint(medium){
       height: rem(54);
       width: rem(54);
+      font-size: rem(24);
     }
   }
 }
