@@ -1,0 +1,64 @@
+@use '../../scss/utils/' as *;
+
+.footer{
+  background-color: $c-purple;
+  padding: rem(16);
+  margin-top: rem(16);
+
+  @include breakpoint(medium){
+    display: flex;
+    justify-content: space-around;
+    margin-top: rem(48);
+    padding: rem(32) rem(64);
+  }
+  
+  .copyright{
+    display: flex;
+    align-items: center;
+    font-size: rem(18);
+    font-weight: 700;
+    color: $c-yellow;
+    .icon{
+      margin-right: rem(4);
+    }
+  }
+
+  .link{
+    display: block;
+    font-family: $font-arch-daughter;
+    font-size: rem(14);
+    color: $c-lightgray;
+    i{
+      margin-right: rem(8);
+    }
+  }
+
+  .section:first-child{
+    & > *{
+      margin-bottom: rem(8);
+    }
+  }
+
+  .section:last-child{
+    margin-top: rem(16);
+    text-align: center;
+    & > *{
+      margin-right: rem(8);
+      color: $c-lightgray;
+    }
+    .link{
+      display: inline;
+    }
+    @include breakpoint(medium){
+      margin-top: 0;
+      span{
+        display: none;
+      }
+      .link{
+        display: block;
+        margin-bottom: rem(8);
+        margin-right: 0;
+      }
+    }
+  }
+}

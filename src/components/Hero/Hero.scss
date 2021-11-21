@@ -8,6 +8,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  color: $c-white;
   // border-bottom: rem(2) solid $c-yellow;
 
   @include breakpoint(medium){

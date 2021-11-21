@@ -92,4 +92,46 @@
       }
     }
   }
+
+  .skills{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 rem(16);
+    gap: rem(16);
+
+    @include breakpoint(medium){
+      grid-template-columns: 1fr 1fr 1fr;
+      padding: 0 rem(64);
+    }
+
+    .text-card{
+      display: flex;
+      align-items: center;
+      gap: rem(8);
+      padding: rem(8);
+      background-color: $c-purple;
+      color: $c-yellow;
+      border-radius: rem(4);
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+      &:nth-child(-n+1), &:nth-child(4n), &:nth-child(4n+1) {
+        background-color: $c-yellow;
+        color: $c-purple;
+      }
+
+      @include breakpoint(medium){
+        &:nth-child(2n){
+          background-color: $c-yellow;
+          color: $c-purple;
+        }
+        &:nth-child(2n+1){
+          background-color: $c-purple;
+          color: $c-yellow;
+        }
+      }
+
+      .icon{
+        font-size: rem(24);
+      }
+    }
+  }
 }

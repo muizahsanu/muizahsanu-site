@@ -1,5 +1,6 @@
 import './App.scss';
 import FloatingButton from './components/FloatingButton/FloatingButton';
+import Footer from './components/Footer/Footer';
 import Hero from './components/Hero/Hero';
 import Nav from './components/Nav/Nav';
 
@@ -24,13 +25,36 @@ const portfolioData = [
   }
 ]
 
+const skillData = [
+  {
+    "skill": "Javascript",
+    "classIcon": "bx bxl-javascript"
+  },
+  {
+    "skill": "PHP",
+    "classIcon": "bx bxl-php"
+  },
+  {
+    "skill": "React JS",
+    "classIcon": "bx bxl-react"
+  },
+  {
+    "skill": "Laravel",
+    "classIcon": "fab fa-laravel"
+  },
+  {
+    "skill": "SASS",
+    "classIcon": "bx bxl-sass"
+  }
+]
+
 function App() {
   return (
     <div className="App">
       <Nav />
       <Hero />
       <div className="content">
-        <div className="content-title reverse">
+        <div id="works" className="content-title reverse">
           Apps I've Build
         </div>
         <div className="portfolio">
@@ -44,10 +68,19 @@ function App() {
           ))}
         </div>
         
-        <div className="content-title">
+        <div id="skills" className="content-title">
           Skills & Technologies
         </div>
+        <div className="skills">
+          {skillData.map((item, index)=>(
+            <div className="text-card" key={index}>
+              <i className={ "icon " + (item.classIcon)}></i>
+              <div className="text">{item.skill}</div>
+            </div>
+          ))}
+        </div>
       </div>
+      <Footer />
       <FloatingButton />
     </div>
   );
